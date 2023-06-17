@@ -6,9 +6,7 @@
 #echo "Ingrese cantidad de imagenes a descargar"
 #read cantidad_imagenes
 
-
-for i in {seq 1 $1}
-
+for i in $(seq 0 $(($1 - 1 )))
 do
     nombre=$(sed -n"$RANDOM"p array)
     echo $nombre
