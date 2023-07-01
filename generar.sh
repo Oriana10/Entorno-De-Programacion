@@ -20,7 +20,7 @@ echo $NOMBRE
 
 for i in $(seq 0 $(($1 - 1 )))
 do
-    curl -L https://source.unsplash.com/random/900%C3%97700/?person --output "$NOMBRE")
+    curl -L https://source.unsplash.com/random/900%C3%97700/?person --output "$NOMBRE"
     sleep 1
 done
 
