@@ -21,3 +21,10 @@ done
 cd ..
 
 tar zcvf images.tar.gz images
+# Calcula el checksum MD5 del archivo comprimido
+checksum=$(md5sum images.tar.gz | awk '{print $1}')
+
+# Genera el archivo con el checksum
+echo "$checksum" > checksum.txt
+
+echo "Generación de imágenes completada."
