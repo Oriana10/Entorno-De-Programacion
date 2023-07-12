@@ -1,5 +1,4 @@
 #!/bin/bash
-<< com
 mostrar_menu() {
     clear
     echo "Seleccione una opción:"
@@ -47,6 +46,5 @@ while true; do
             ;;
     esac
 done 
-com
 
-echo "oli"
+
