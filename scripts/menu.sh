@@ -26,8 +26,9 @@ while true; do
             bash generar.sh $CANTIDAD
             read -p "Presiona Enter para continuar..."
             ;;
-        2)
+        2) 
             echo "Has elegido la Opción 2"
+            bash descomprimir.sh ../images.tar.gz ../checksum.txt
             read -p "Presiona Enter para continuar..."
             ;;
         3)
@@ -36,6 +37,7 @@ while true; do
             ;;
         4)
             echo "Has elegido la Opción 4"
+            bash comprimir.sh
             read -p "Presiona Enter para continuar..."
             ;;
         5)
