@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 #AGREGAR FUNCION PARA CONSEGUIR EL NOMBRE Y METERLO ADENTRO DEL FOR
@@ -6,7 +5,7 @@
 #IGNORAR EL CSV Y TRABAJARLO DESCARGANDOLO. VALIDAR QUE EXISTA O NO EL ARCHIVO
 
 [[ $# -ne 1 ]] && echo "Debes ingresar un solo argumento" && exit 1
-#! [[ '^[0-9]+$' =~ $1 ]] && echo "El argumento debe ser un numero" && exit 1
+#! [[ '^[0-9]+$' =~ $1 ]] && echo "El argumento debe ser un numero" && exit 1 # arreglar validacion
 
 cd ..
 mkdir -p images 
@@ -32,4 +31,4 @@ echo "$checksum" > checksum.txt
 
 echo "Generación y compresion de imágenes completada."
 
-rm -r images
+#rm -r images
