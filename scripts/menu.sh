@@ -21,6 +21,9 @@ while true; do
     case $opcion in
         1)
             echo "Has elegido la Opción 1"
+            echo "Ingrese la cantidad de imagenes que desea generar: "
+            read CANTIDAD
+            bash generar.sh $CANTIDAD
             read -p "Presiona Enter para continuar..."
             ;;
         2)
