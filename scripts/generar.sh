@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 #AGREGAR FUNCION PARA CONSEGUIR EL NOMBRE Y METERLO ADENTRO DEL FOR
@@ -7,6 +6,7 @@
 
 [[ $# -ne 1 ]] && echo "Debes ingresar un solo argumento" && exit 1
 [[ ! $1  =~ ^[0-9]+$ ]] && echo "El argumento debe ser un numero" && exit 1
+
 
 cd ..
 mkdir -p images 
@@ -32,4 +32,4 @@ echo "$checksum" > checksum.txt
 
 echo "Generación y compresion de imágenes completada."
 
-rm -r images
+#rm -r images
