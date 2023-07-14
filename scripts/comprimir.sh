@@ -1,4 +1,8 @@
-ls images > images_list
-grep '^[A-Z][a-z]*$' images_list > valid_names_list.txt
-grep 'a$' valid_names_list.txt | wc -l > finish_with_a.txt
-zip names.zip images_list valid_names_list.txt finish_with_a.txt images/*
+cd ..
+mkdir -p final_images
+ls ./cropped_images > ./final_images/images.txt
+ls ./images > ./final_images/valid_images.txt
+ls ./images | grep "a$" > ./final_images/finish_with_a.txt
+mv ./images ./final_images
+tar zcvf final_images.tar.gz final_images
+

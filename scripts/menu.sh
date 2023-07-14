@@ -33,6 +33,7 @@ while true; do
             ;;
         3)
             echo "Has elegido la Opción 3"
+            bash procesar.sh
             read -p "Presiona Enter para continuar..."
             ;;
         4)
