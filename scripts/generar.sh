@@ -6,7 +6,7 @@
 #IGNORAR EL CSV Y TRABAJARLO DESCARGANDOLO. VALIDAR QUE EXISTA O NO EL ARCHIVO
 
 [[ $# -ne 1 ]] && echo "Debes ingresar un solo argumento" && exit 1
-#! [[ '^[0-9]+$' =~ $1 ]] && echo "El argumento debe ser un numero" && exit 1
+[[ ! $1  =~ ^[0-9]+$ ]] && echo "El argumento debe ser un numero" && exit 1
 
 cd ..
 mkdir -p images 
