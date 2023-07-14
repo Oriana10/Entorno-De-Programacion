@@ -32,4 +32,4 @@ echo "$checksum" > checksum.txt
 
 echo "Generación y compresion de imágenes completada."
 
-#rm -r images
+rm -r images
