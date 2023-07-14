@@ -4,4 +4,4 @@
 
 ## Como se corre?
 
-docker run -it -v ./images:/app/images tp-entorno
+docker run -it -v ./final_images:/app/final_images tp-entorno
