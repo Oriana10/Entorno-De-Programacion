@@ -10,10 +10,8 @@ mostrar_menu() {
     echo
 }
 
-opcion_invalida() {
-    echo "Opción inválida. Por favor, seleccione una opción válida."
-}
 
+cd scripts
 while true; do
     mostrar_menu
     read -p "Elige una opción: " opcion
@@ -23,25 +21,21 @@ while true; do
             echo "Has elegido la Opción 1"
             echo "Ingrese la cantidad de imagenes que desea generar: "
             read CANTIDAD
-            cd scripts
             bash generar.sh $CANTIDAD
             read -p "Presiona Enter para continuar..."
             ;;
         2) 
             echo "Has elegido la Opción 2"
-	        cd scripts
             bash descomprimir.sh ../images.tar.gz ../checksum.txt
             read -p "Presiona Enter para continuar..."
             ;;
         3)
             echo "Has elegido la Opción 3"
-	        cd scripts
             bash procesar.sh
             read -p "Presiona Enter para continuar..."
             ;;
         4)
             echo "Has elegido la Opción 4"
-	        cd scripts
             bash comprimir.sh
             read -p "Presiona Enter para continuar..."
             ;;
